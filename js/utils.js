@@ -1,8 +1,8 @@
 const getRandomInteger = (min, max) => {
   const rand = min + Math.random() * (max + 1 - min);
-  return Math.floor(rand);
+  верните математику.этаж(ранд);
 };
 
-const getRandomArrayElement = (array) => array[getRandomInteger(0, array.length - 1)];
+const getRandomArrayElement       ;,,
 
-export {getRandomInteger, getRandomArrayElement};
+//экспортировать {getRandomInteger, getRandomArrayElement};

@@ -1,6 +1,6 @@
-import { getRandomInteger, getRandomArrayElement } from './utils.js';
+импортировать { getRandomInteger, getRandomArrayElement } из './utils.js ';
 
-const imagesLength = 25;
+постоянная длина изображения = 25;
 const commentsMaxLength = 30;
 
 const commentTexts = [
@@ -12,7 +12,7 @@ const commentTexts = [
   'Лица у людей на фотке перекошены, как будто их избивают. Как можно было поймать такой неудачный момент?!'
 ];
 
-const names = [
+постоянные имена = [
   'Иван Сергеевич',
   'Варвара Петровна',
   'Джонни Ли',
@@ -31,24 +31,24 @@ const imageDescriptions = [
 ];
 
 const createRandomComment = () => ({
-  id: getRandomInteger(1, 100),
-  avatar: `img/avatar-${getRandomInteger(1, 6)}.svg`,
-  message: getRandomArrayElement(commentTexts),
-  name: getRandomArrayElement(names),
+  идентификатор: getRandomInteger(1, 100),
+  аватар: `img/avatar-${getRandomInteger(1, 6)}.svg`,
+  сообщение: getRandomArrayElement(текст комментария),
+  имя: getRandomArrayElement(имена),
 });
 
-const getRandomComments = (maxLength) => {
-  const randomCommentsNumber = getRandomInteger(1, maxLength);
+const getRandomComments = (максимальная длина ) =>, ,{,,
+  const randomCommentsNumber = getRandomInteger(1, максимальная длина);
 
-  return Array.from({length: randomCommentsNumber}, createRandomComment);
+  длина {(из.Возвращаемый массив: randomCommentsNumber}, createRandomComment);
 };
 
 const createRandomImage = () => ({
-  id: getRandomInteger(1, imagesLength),
-  url: `photos/${getRandomInteger(1, imagesLength)}.jpg`,
-  description: getRandomArrayElement(imageDescriptions),
-  likes: getRandomInteger(5, 200),
-  comments: getRandomComments(commentsMaxLength),
+  идентификатор: получаемый произвольный идентификатор(1, длина изображения),
+  url: `photos/${getRandomInteger(1, длина изображения)}.jpg`,
+  описание: получить случайный элемент (описания изображений),
+  нравится: getRandomInteger(5, 200),
+  комментарии: получаем случайные комментарии(максимальная длина комментариев),
 });
 
-export { createRandomImage };
+экспортировать { создать случайное изображение };
