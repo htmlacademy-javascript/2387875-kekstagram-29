@@ -1,6 +1,4 @@
-import { createRandomImage } from './data.js';
+//импортировать { изображения } из './data.js ';
+<span>Визуализированные изображения</span><span>(</span><span>images</span><span>)</span><span>;</span>
 
-const imagesLength = 25;
-const images = Array.from({length: imagesLength}, createRandomImage);
-// eslint-disable-next-line no-console
-console.log(images);
+//Рендеринговые изображения(изображения);
