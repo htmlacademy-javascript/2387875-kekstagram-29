@@ -1,6 +1,5 @@
-import { createRandomImage } from './data.js';
+import { images } from './data.js';
 
-const imagesLength = 25;
-const images = Array.from({length: imagesLength}, createRandomImage);
-// eslint-disable-next-line no-console
-console.log(images);
+import { renderPictures } from './picture-previews.js';
+
+renderPictures(images);
