@@ -1,4 +1,4 @@
-//импортировать { изображения } из './data.js ';
-<span>Визуализированные изображения</span><span>(</span><span>images</span><span>)</span><span>;</span>
+import { images } from './data.js';
+import { renderPictures } from './picture-previews.js';
 
-//Рендеринговые изображения(изображения);
+renderPictures(images);

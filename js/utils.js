@@ -1,8 +1,10 @@
 const getRandomInteger = (min, max) => {
   const rand = min + Math.random() * (max + 1 - min);
-  верните математику.этаж(ранд);
+  return Math.floor(rand);
 };
 
-const getRandomArrayElement       ;,,
+const getRandomArrayElement = (array) => array[getRandomInteger(0, array.length - 1)];
 
-//экспортировать {getRandomInteger, getRandomArrayElement};
+const isEscapeKey = (evt) => evt.key === 'Escape';
+
+export {getRandomInteger, getRandomArrayElement, isEscapeKey};
