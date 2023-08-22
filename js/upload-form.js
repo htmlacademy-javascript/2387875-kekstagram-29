@@ -17,12 +17,12 @@ const HashtagValid = {
 const DESCRIPTION_MAX_LENGTH = 140;
 
 const ErrorMessage = {
-  START_SYMBOL: `Хештег должен начинаться с символа '#'`,
+  START_SYMBOL: 'Хештег должен начинаться с символа \'#\'',
   MINLENGTH: `Минимальная длина хештега - от ${HashtagValid.MIN_LENGTH} символов (включая #)`,
   MAXLENGTH: `Максимальная длина хештега - ${HashtagValid.MAX_LENGTH} символов (включая #)`,
   MAX_NUMBER: `Введите не более ${HashtagValid.MAX_NUMBER} хештегов`,
-  SYMBOLS_INCLUDED: `Хештег должен содержать только символ '#' буквы и цифры`,
-  REPEAT: `Хештеги не должны повторяться`,
+  SYMBOLS_INCLUDED: 'Хештег должен содержать только символ \'#\' буквы и цифры',
+  REPEAT: 'Хештеги не должны повторяться',
   DESCRIPTION_MAXLENGTH: `не больше ${DESCRIPTION_MAX_LENGTH} символов`,
 };
 
